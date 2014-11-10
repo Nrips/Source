@@ -1,0 +1,17 @@
+//
+//  QuestionsInStory.h
+//  Autism
+//
+//  Created by Neuron-iPhone on 2/24/14.
+//  Copyright (c) 2014 Haider. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface QuestionsInStory : NSObject
+
+@property (nonatomic, strong) NSString *questionsName;
+@property (nonatomic, strong) NSString *idQues;
+
+
+@end

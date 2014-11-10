@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="TSf-FP-LcH" customClass="QuestionDetailHeaderViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TSf-FP-LcH" id="Md5-Ry-f64">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mM5-Tz-vhb" customClass="MyImageView">
+                        <rect key="frame" x="0.0" y="16" width="36" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="single-arrow-1.png" id="iX1-dm-uFl">
+                        <rect key="frame" x="37" y="23" width="10" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Gi8-e3-xbk">
+                        <rect key="frame" x="46" y="0.0" width="274" height="171"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="question" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rO3-vJ-nfb" customClass="STTweetLabel">
+                        <rect key="frame" x="62" y="82" width="244" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="5gx-LC-VPY">
+                        <rect key="frame" x="48" y="138" width="272" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="4yv-dN-5bj">
+                                <rect key="frame" x="0.0" y="0.0" width="275" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UZD-DG-N6k">
+                                <rect key="frame" x="99" y="3" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="qa-helful-circle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="HelpfulCirclePressed:" destination="TSf-FP-LcH" eventType="touchUpInside" id="KMg-OF-cxk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="At2-c1-2hp">
+                                <rect key="frame" x="230" y="3" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="qa-reply-circle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="replyCirclePressed:" destination="TSf-FP-LcH" eventType="touchUpInside" id="R66-Fy-zK0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uze-L9-FVq">
+                                <rect key="frame" x="3" y="2" width="85" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="qa-helpful.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="qa-helpful-active.png"/>
+                                <connections>
+                                    <action selector="helpfullAction:" destination="TSf-FP-LcH" eventType="touchUpInside" id="jwo-Kh-dLC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WXl-MS-PI0">
+                                <rect key="frame" x="138" y="2" width="75" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="qa-reply.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="qa-reply-active.png"/>
+                                <connections>
+                                    <action selector="replyButtonPressed:" destination="TSf-FP-LcH" eventType="touchUpInside" id="OKU-8u-y5U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q2a-i1-cgd">
+                        <rect key="frame" x="51" y="2" width="248" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oib-kP-erm">
+                        <rect key="frame" x="289" y="1" width="24" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" backgroundImage="action-btn.fw.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="reportToAWMButtonPressed:" destination="TSf-FP-LcH" eventType="touchUpInside" id="gER-9p-CUC"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PcO-qm-Tkg">
+                        <rect key="frame" x="58" y="2" width="230" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.14117647059999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7NO-QP-2ck" customClass="CustomLabel">
+                        <rect key="frame" x="73" y="40" width="244" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.5450980392" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa-question.png" id="C2b-MQ-Sfm">
+                        <rect key="frame" x="49" y="29" width="16" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7g7-7V-G4a">
+                        <rect key="frame" x="50" y="0.0" width="225" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="memberNameBtnPressed:" destination="TSf-FP-LcH" eventType="touchUpInside" id="Luz-w8-JcE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274510000002" green="0.95294117649999999" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="Gi8-e3-xbk" id="Swh-yb-Ixx"/>
+                <outlet property="btnHelpful" destination="uze-L9-FVq" id="TRz-4k-T3E"/>
+                <outlet property="btnHelpfulCircle" destination="UZD-DG-N6k" id="5dy-57-98h"/>
+                <outlet property="btnReplyCircle" destination="At2-c1-2hp" id="MWd-zf-mFT"/>
+                <outlet property="btnReportToAwm" destination="Oib-kP-erm" id="gFz-Gs-iII"/>
+                <outlet property="buttonView" destination="5gx-LC-VPY" id="PcB-ai-x0b"/>
+                <outlet property="lblName" destination="PcO-qm-Tkg" id="N9z-oT-2bs"/>
+                <outlet property="lblQuestion" destination="7NO-QP-2ck" id="JUH-uB-7PU"/>
+                <outlet property="lblQuestionDetail" destination="rO3-vJ-nfb" id="Zb5-N1-nHB"/>
+                <outlet property="profileimage" destination="mM5-Tz-vhb" id="WDV-4q-nVI"/>
+                <outlet property="replyButton" destination="WXl-MS-PI0" id="L1S-6g-Z0P"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="action-btn.fw.png" width="44" height="44"/>
+        <image name="qa-helful-circle.png" width="26" height="26"/>
+        <image name="qa-helpful-active.png" width="85" height="26"/>
+        <image name="qa-helpful.png" width="85" height="26"/>
+        <image name="qa-question.png" width="16" height="16"/>
+        <image name="qa-reply-active.png" width="85" height="26"/>
+        <image name="qa-reply-circle.png" width="26" height="26"/>
+        <image name="qa-reply.png" width="85" height="26"/>
+        <image name="single-arrow-1.png" width="10" height="17"/>
+    </resources>
+</document>

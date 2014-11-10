@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileShowViewController">
+            <connections>
+                <outlet property="BtnAddToCircle" destination="oZD-DL-ebR" id="zI9-9w-VDy"/>
+                <outlet property="BtnBlockMember" destination="guA-7m-AU3" id="ubO-lS-wTH"/>
+                <outlet property="BtnMyRecentActivity" destination="BKb-gI-PGu" id="Iyb-Z2-89U"/>
+                <outlet property="BtnOtherPostUpdate" destination="O0X-Wf-ZXl" id="toe-IB-V2b"/>
+                <outlet property="BtnPostUpdate" destination="ltc-E7-iRR" id="x8S-7a-cam"/>
+                <outlet property="BtnSendMessage" destination="MDm-Lw-BHC" id="wPL-ge-oPH"/>
+                <outlet property="MyCircle" destination="G0W-iu-tcE" id="pap-RB-35B"/>
+                <outlet property="MyEvents" destination="uQO-w4-Xn2" id="ECU-GL-1lF"/>
+                <outlet property="btnAllActivity" destination="9tS-3y-IHj" id="4Xq-ff-3hS"/>
+                <outlet property="btnMyFamily" destination="01b-Bs-51W" id="Z0S-Gw-sE4"/>
+                <outlet property="btnMyPicture" destination="KJD-jb-D3G" id="9BO-QS-eUV"/>
+                <outlet property="btnMyQA" destination="gnM-Fu-How" id="beM-yB-9wo"/>
+                <outlet property="btnMyStory" destination="2kx-fB-KeM" id="Fqw-7E-aTD"/>
+                <outlet property="imgProfilePicture" destination="aDb-PC-th0" id="DtJ-3B-PV7"/>
+                <outlet property="lblCity" destination="I72-Wb-uVa" id="1i3-j8-lSj"/>
+                <outlet property="lblName" destination="c5C-by-JiW" id="rlb-hf-IML"/>
+                <outlet property="lblNoRecordFound" destination="BFo-z8-Sjk" id="CvC-bH-Yxc"/>
+                <outlet property="scrollView" destination="cNB-My-H6y" id="UHr-yd-G2c"/>
+                <outlet property="tablePostActivity" destination="qP5-u1-zGP" id="oHZ-oG-Umw"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="cNB-My-H6y">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light-gray-full-bg.fw.png" id="xeq-U0-XbY">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-banner.png" id="7A9-Va-MSX">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-140.png" id="aDb-PC-th0" customClass="MyImageView">
+                            <rect key="frame" x="8" y="53" width="112" height="118"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ltc-E7-iRR">
+                            <rect key="frame" x="12" y="189" width="85" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Post Update" backgroundImage="post-update-big-btn.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="post-update-big-btn-active.png"/>
+                            <connections>
+                                <action selector="postUpdateAction:" destination="-1" eventType="touchUpInside" id="0uA-Gt-nxd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2kx-fB-KeM" userLabel="MyStory">
+                            <rect key="frame" x="0.0" y="233" width="107" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="mystory-profile-tab.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="mystoryEvent:" destination="-1" eventType="touchUpInside" id="1X2-WB-XVw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="01b-Bs-51W" userLabel="MyFamily">
+                            <rect key="frame" x="107" y="233" width="107" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="myfamily-profile-tab.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="myFamilyEvent:" destination="-1" eventType="touchUpInside" id="TLC-Ib-JJ1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uQO-w4-Xn2" userLabel="MyEvents">
+                            <rect key="frame" x="0.0" y="298" width="107" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="myevents-profile-tab.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="myEventsAction:" destination="-1" eventType="touchUpInside" id="HBd-iV-fay"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gnM-Fu-How" userLabel="MyQA">
+                            <rect key="frame" x="107" y="298" width="107" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="myqa-profile-tab.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="myQAEvent:" destination="-1" eventType="touchUpInside" id="p4s-R2-JZ6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KJD-jb-D3G" userLabel="MyPicture">
+                            <rect key="frame" x="214" y="298" width="106" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="my-picture-tab.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="myPictureEvent:" destination="-1" eventType="touchUpInside" id="nZV-gc-Kzv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G0W-iu-tcE" userLabel="MyCircle">
+                            <rect key="frame" x="214" y="233" width="106" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="mycircle-profile-tab.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="mycircleEvent:" destination="-1" eventType="touchUpInside" id="urA-mr-T9m"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BKb-gI-PGu">
+                            <rect key="frame" x="222" y="189" width="92" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Recent Activity" backgroundImage="post-update-big-btn.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="post-update-big-btn-active.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="myRecentActivityAction:" destination="-1" eventType="touchUpInside" id="4ex-ZY-MHi"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qP5-u1-zGP">
+                            <rect key="frame" x="0.0" y="359" width="320" height="330"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Tye-mP-unw"/>
+                                <outlet property="delegate" destination="-1" id="QsE-Im-xEB"/>
+                            </connections>
+                        </tableView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Record Found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BFo-z8-Sjk">
+                            <rect key="frame" x="3" y="369" width="312" height="114"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c5C-by-JiW" userLabel="UserName">
+                            <rect key="frame" x="124" y="131" width="194" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.5450980392" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O0X-Wf-ZXl" userLabel="PostUpdate">
+                            <rect key="frame" x="4" y="189" width="68" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="Post Update" backgroundImage="post-update-big-btn.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="postUpdateAction:" destination="-1" eventType="touchUpInside" id="O68-fp-kj1"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oZD-DL-ebR" userLabel="AddtoCircle">
+                            <rect key="frame" x="77" y="189" width="71" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="Add to Circle" backgroundImage="post-update-big-btn.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addToCircleButtonPressed:" destination="-1" eventType="touchUpInside" id="XRK-5H-UPY"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MDm-Lw-BHC" userLabel="SendMessage">
+                            <rect key="frame" x="152" y="189" width="78" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="Send Message" backgroundImage="post-update-big-btn.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sendMessageButtonPressed:" destination="-1" eventType="touchUpInside" id="1uR-3t-21H"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="guA-7m-AU3" userLabel="BlockMember">
+                            <rect key="frame" x="232" y="189" width="86" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="Block Member" backgroundImage="post-update-big-btn.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="blockMemberButtonPressed:" destination="-1" eventType="touchUpInside" id="iQ2-Rz-SKw"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I72-Wb-uVa" userLabel="City">
+                            <rect key="frame" x="124" y="152" width="194" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9tS-3y-IHj">
+                            <rect key="frame" x="117" y="189" width="85" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="All Activity" backgroundImage="post-update-big-btn.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="post-update-big-btn-active.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="allActivityButtonPressed:" destination="-1" eventType="touchUpInside" id="e4O-fp-kqr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar-140.png" width="140" height="140"/>
+        <image name="light-gray-full-bg.fw.png" width="640" height="960"/>
+        <image name="my-picture-tab.png" width="213" height="130"/>
+        <image name="mycircle-profile-tab.png" width="213" height="130"/>
+        <image name="myevents-profile-tab.png" width="213" height="130"/>
+        <image name="myfamily-profile-tab.png" width="214" height="130"/>
+        <image name="myqa-profile-tab.png" width="214" height="130"/>
+        <image name="mystory-profile-tab.png" width="213" height="130"/>
+        <image name="post-update-big-btn-active.png" width="192" height="62"/>
+        <image name="post-update-big-btn.png" width="150" height="31"/>
+        <image name="profile-banner.png" width="320" height="126"/>
+    </resources>
+</document>

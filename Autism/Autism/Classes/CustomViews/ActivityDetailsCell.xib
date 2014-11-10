@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="ActivityDetailsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light-gray-center-bg.png" id="xhF-xw-rD5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9vY-z2-jJz">
+                        <rect key="frame" x="63" y="0.0" width="258" height="121"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-140.png" id="1Wa-Mv-3al" customClass="MyImageView">
+                        <rect key="frame" x="26" y="1" width="35" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S8a-oz-sdk" userLabel="UserName">
+                        <rect key="frame" x="68" y="3" width="194" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3294117647" green="0.1843137255" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cp4-wM-n9e" userLabel="Remove activity Button">
+                        <rect key="frame" x="294" y="6" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" backgroundImage="close-icon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="removeActivtyButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Jtp-bJ-2X2"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RiO-NC-hib" userLabel="Update Activity">
+                        <rect key="frame" x="269" y="6" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" backgroundImage="edit-icon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" backgroundImage="edit-icon-active.png"/>
+                        <connections>
+                            <action selector="editButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="u7J-L0-Fzx"/>
+                        </connections>
+                    </button>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Y8H-VR-V18">
+                        <rect key="frame" x="71" y="35" width="239" height="51"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XCc-uK-zPT" customClass="STTweetLabel">
+                        <rect key="frame" x="73" y="37" width="242" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="TRV-hK-d7Z">
+                        <rect key="frame" x="65" y="89" width="258" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa-line.png" id="ZsT-JT-7f1">
+                                <rect key="frame" x="116" y="2" width="1" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aF9-gq-srX" userLabel="Like Button">
+                                <rect key="frame" x="3" y="6" width="77" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" backgroundImage="reply-like.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="reply-like-active.png"/>
+                                <connections>
+                                    <action selector="likeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QN2-Dh-9oa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa-line.png" id="7Ki-qL-LMR">
+                                <rect key="frame" x="0.0" y="30" width="253" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TpE-Cs-cRl">
+                                <rect key="frame" x="159" y="9" width="83" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reply-watch-icon.png" id="rd4-tR-mR9">
+                                <rect key="frame" x="141" y="11" width="15" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa-line.png" id="67X-p8-18h">
+                                <rect key="frame" x="0.0" y="1" width="253" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="db8-pC-MSI">
+                        <rect key="frame" x="68" y="3" width="190" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="memberNameBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bet-Sf-f0T"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgGrayImageView" destination="xhF-xw-rD5" id="zzO-Ey-Kfh"/>
+                <outlet property="bgImageView" destination="9vY-z2-jJz" id="DGC-RO-VIG"/>
+                <outlet property="buttonView" destination="TRV-hK-d7Z" id="gl9-VE-342"/>
+                <outlet property="commentTextView" destination="Y8H-VR-V18" id="3Cy-Jg-Rmz"/>
+                <outlet property="commentTime" destination="TpE-Cs-cRl" id="0Z9-t0-5Dz"/>
+                <outlet property="commentedUserName" destination="S8a-oz-sdk" id="rtU-TT-MKn"/>
+                <outlet property="commentedUserProfileView" destination="1Wa-Mv-3al" id="0O4-iq-irC"/>
+                <outlet property="editActivityButton" destination="RiO-NC-hib" id="vzZ-Cu-ywL"/>
+                <outlet property="lblcomment" destination="XCc-uK-zPT" id="jJ4-Vo-6jE"/>
+                <outlet property="likeButton" destination="aF9-gq-srX" id="BTg-4z-CTK"/>
+                <outlet property="removeActivityButton" destination="cp4-wM-n9e" id="eOk-UC-ld0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar-140.png" width="140" height="140"/>
+        <image name="close-icon.png" width="20" height="20"/>
+        <image name="edit-icon-active.png" width="30" height="30"/>
+        <image name="edit-icon.png" width="30" height="30"/>
+        <image name="light-gray-center-bg.png" width="640" height="755"/>
+        <image name="qa-line.png" width="360" height="1"/>
+        <image name="reply-like-active.png" width="155" height="46"/>
+        <image name="reply-like.png" width="155" height="46"/>
+        <image name="reply-watch-icon.png" width="22" height="22"/>
+    </resources>
+</document>

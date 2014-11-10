@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpfulDetailViewController">
+            <connections>
+                <outlet property="detailHeaderImageView" destination="gyd-xh-5jq" id="xsE-1F-DaM"/>
+                <outlet property="lblQuestion" destination="qzf-p7-Ffh" id="7ho-P9-iwY"/>
+                <outlet property="qaIconImageView" destination="BwK-PR-6tD" id="4ay-2j-vAY"/>
+                <outlet property="scrollView" destination="MSx-ko-oOo" id="Ush-z4-zd3"/>
+                <outlet property="sepratorImageView" destination="qhA-Si-YJd" id="ctu-P4-UAb"/>
+                <outlet property="tblHelpfulView" destination="XO0-N1-17a" id="Uvr-Mo-xu5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MSx-ko-oOo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light-gray-center-bg.png" id="gyd-xh-5jq">
+                            <rect key="frame" x="0.0" y="1" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XO0-N1-17a">
+                            <rect key="frame" x="0.0" y="79" width="320" height="488"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="sectionIndexBackgroundColor" red="0.95686274510000002" green="0.95294117649999999" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="BQo-is-ia3"/>
+                                <outlet property="delegate" destination="-1" id="hs1-Yy-tYj"/>
+                            </connections>
+                        </tableView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa-question.png" id="BwK-PR-6tD">
+                            <rect key="frame" x="9" y="24" width="16" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa-line.png" id="qhA-Si-YJd">
+                            <rect key="frame" x="0.0" y="76" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qzf-p7-Ffh" customClass="CustomLabel">
+                            <rect key="frame" x="30" y="13" width="279" height="58"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="light-gray-center-bg.png" width="640" height="755"/>
+        <image name="qa-line.png" width="360" height="1"/>
+        <image name="qa-question.png" width="16" height="16"/>
+    </resources>
+</document>
